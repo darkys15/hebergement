@@ -6,14 +6,14 @@ app = FastAPI()
 @app.get("/") 
 async def Bienvenu():
     try:
-        return{"message" :" Bonjourr RCW 1002"}
+        return{"message" :" Bienvenu au cours de RCW groupe 1002"}
     except Exception as e :
         raise HTTPException(status_code=500,detail=str(e))
 
 @app.get("/test")
 async def Bonjour():
     try:
-        return{"message" :"SERVEUR COURS RCW"}
+        return{"message" :"TEST DU SERVEUR COURS RCW REUSSI"}
     except Exception as e :
         HTTPException(status_code=500,detail=str(e))
 
